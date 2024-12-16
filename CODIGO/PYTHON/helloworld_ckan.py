@@ -3,7 +3,7 @@
 from ckanapi import RemoteCKAN
 
 # Connect to the CKAN instance
-ckan = RemoteCKAN(': http://datos.comunidad.madrid/')
+ckan = RemoteCKAN('http://datos.comunidad.madrid/')
 
 # Fetch a dataset (using the dataset ID or name)
 dataset = ckan.action.package_show(id='93bed3f0-3ba5-4b00-90bf-1c81951bab24')
